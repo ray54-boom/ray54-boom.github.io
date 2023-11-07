@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Utama</title>
+	<style>
+		#myVideo {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 50%;
+			height: auto;
+			cursor: auto;
+		}
+	</style>
+</head>
+<body>
+	<video id="myVideo" controls>
+	  <source src="img/aku.mp4" type="video/mp4">
+	  Browser Anda tidak mendukung elemen video.
+	</video>
+	    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+
+    <dotlottie-player src="https://lottie.host/a5d0ef4f-341b-42da-b907-1803628068fb/pRD8qiHi6Z.json" background="transparent" speed="1" style="width: 60%; margin: -20%; ; padding-top: 100px;" loop autoplay></dotlottie-player>
+    <dotlottie-player src="https://lottie.host/a5d0ef4f-341b-42da-b907-1803628068fb/pRD8qiHi6Z.json" background="transparent" speed="1" style="width: 60%; margin: -20%; ; padding-top: -500px;padding-left: 950px; " loop autoplay></dotlottie-player>
+
+	<script>
+		document.getElementById('myVideo').addEventListener('click', function() {
+			this.requestFullscreen();
+			this.play();
+		});
+	</script>
+</body>
+</html>
